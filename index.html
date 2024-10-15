@@ -4,9 +4,44 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Rock Paper Scissor</title>
+  <style>
+    .display-match {
+      margin-top: 40px;
+      width: 800px;
+      height: 300px;
+      border: 2px solid black;
+      border-radius: 20px;
+      padding: 20px;
+    }
+  </style>
 </head>
 <body>
-  <h2>Open console developer tools</h2>
+  <h1>Play Rock Paper Scissor</h1>
+  <h3>Choose your selection: </h3>
+  <h4 id="display-selection"></h4>
+
+  <button class="selection-btn">Rock</button>
+  <button class="selection-btn">Paper</button>
+  <button class="selection-btn">Scissors</button>
+
+  <div class="display-match">
+    <h3 id="result"></h3>
+    <button id="play-round">Play Round</button>
+
+    <h2 id="match-result">You Win!!!</h2>
+
+    <h4>Score: </h4>
+    <table>
+      <tr>
+        <th>Human</th>
+        <th>Computer</th>
+      </tr>
+      <tr>
+        <td id="human-score">0</td>
+        <td id="comp-score">0</td>
+      </tr>
+    </table>
+  </div>
   
   <script src="./script.js"></script>
 </body>
